@@ -2,7 +2,6 @@ FROM rocker/rstudio:4.1.3
 
 WORKDIR /home/rstudio
 
-RUN pwd
 
 COPY --chown=rstudio:rstudio renv.lock .
 COPY --chown=rstudio:rstudio renv renv
