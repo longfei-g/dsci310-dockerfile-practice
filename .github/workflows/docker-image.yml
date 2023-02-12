@@ -13,6 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag longfei-g/dsci310-dockerfile-practice:latest
   
